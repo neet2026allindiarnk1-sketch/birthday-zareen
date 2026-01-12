@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Zareen 💕</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Floating Hearts Background -->
+    <div class="hearts-bg" id="heartsBg"></div>
+    
+    <!-- Confetti Container -->
+    <div class="confetti-container" id="confetti"></div>
+
+    <!-- Audio Control -->
+    <button class="audio-btn" id="audioBtn">🎵</button>
+    <audio id="bgMusic" loop>
+        <source src="mushk.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Screen 1: Welcome -->
+    <section class="screen welcome-screen active" id="screen1">
+        <div class="welcome-content">
+            <p class="small-text">hey jaleen...</p>
+            <h1 class="main-title">kuch listening carogi cya aap... 💕</h1>
+            <p class="subtitle">Are you ready?</p>
+            <button class="next-btn pulse" onclick="nextScreen(2)">Haan, Batao 💫</button>
+        </div>
+    </section>
+
+    <!-- Screen 2: Birthday Reveal -->
+    <section class="screen birthday-screen" id="screen2">
+        <div class="birthday-content">
+            <p class="its-your">It's My gal's </p>
+            <h1 class="birthday-title">Happy Birthday</h1>
+            <h2 class="name-title">ILYSMMM 💋💋😭 </h2>
+            <div class="cake-emoji">🎂</div>
+            <button class="next-btn" onclick="nextScreen(3)">Aage Dekho →</button>
+        </div>
+    </section>
+
+    <!-- Screen 3: Our Story -->
+    <section class="screen story-screen" id="screen3">
+        <div class="story-content">
+            <h2 class="section-title">Humari Kahaani 📖</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>3 Saal Pehle 💬</h3>
+                        <p>Ek NEET doubt group pe Telegram pe mile the hum..kaun jaanta tha ki yeh doubt group meri zindagi ka sabse khoobsurat chapter likhne wala hai?😝</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>My Shy Bebi 🙈</h3>
+                        <p>Itni shy thi ki texts pe se reactions bhi remove kar deti thi... aur ab dekho, meri mommy  ban gayi ho tum!😔</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Thodi Kareebi 💕...</h3>
+                        <p>Phir dheere dheere baat hone lagi... regular texting, late night talks... aur ek din realize hua ki tumse baat karna zaroorat ban gayi hai. (no longer indiement men I am 🥺 )</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>best 6-7 mahine of my life yet 👉👈</h3>
+                        <p>Religion alag, cities alag... phir bhi dil ek. Proudly dating the most amazing soul I've ever known!</p>
+                    </div>
+                </div>
+            </div>
+            <button class="next-btn" onclick="nextScreen(4)">Continue →</button>
+        </div>
+    </section>
+
+    <!-- Screen 4: Why You're Special -->
+    <section class="screen special-screen" id="screen4">
+        <div class="special-content">
+            <h2 class="section-title">Why You're Special ✨</h2>
+            <div class="reasons-container">
+                <div class="reason-card" style="--delay: 0.1s">
+                    <span class="reason-emoji">🏠</span>
+                    <p>Tum mera <strong>comfort zone</strong> ho...mere liye makhmal ke gadde jesi ho , kha jaunga kisi din free time me apco </p>
+                </div>
+                <div class="reason-card" style="--delay: 0.2s">
+                    <span class="reason-emoji">💪</span>
+                    <p>Tumne mujhe sikhaya <strong>khud se pyaar karna</strong>... tumne mujhme confidence laaya jo kisi ne nahi laaya (mere khudki bski ni thi)</p>
+                </div>
+                <div class="reason-card" style="--delay: 0.3s">
+                    <span class="reason-emoji">🙊</span>
+                    <p>Sirf tum ho jinke saamne main <strong>vulnerable</strong> ho sakta hu... bina judge hue</p>
+                </div>
+                <div class="reason-card" style="--delay: 0.4s">
+                    <span class="reason-emoji">👉👈</span>
+                    <p>Sundar toh ho hi bahut... <strong>andar se bhi, bahar se bhi</strong></p>
+                </div>
+                <div class="reason-card" style="--delay: 0.5s">
+                    <span class="reason-emoji">🤝</span>
+                    <p><strong>Truthful aur trustworthy</strong>... tum pe aankh band karke bharosa kar sakta hu(mere binance ka password - 258014)</p>
+                </div>
+            </div>
+            <button class="next-btn" onclick="nextScreen(5)">Aur Bhi Hai →</button>
+        </div>
+    </section>
+
+    <!-- Screen 5: Photo Gallery -->
+    <section class="screen gallery-screen" id="screen5">
+        <div class="gallery-content">
+            <h2 class="section-title">Mere Phone Ki Sabse Pyaari Photos 📸</h2>
+            <div class="gallery">
+                <div class="photo-frame">
+                    <img src="photo1.jpg" alt="Zareen">
+                    <p class="photo-caption">My Bebigal 💕</p>
+                </div>
+                <div class="photo-frame">
+                    <img src="photo2.jpg" alt="Zareen">
+                    <p class="photo-caption">Jaleen Meri ✨</p>
+                </div>
+            </div>
+            <p class="gallery-note">Har video call ek special memory hai mere liye... 💋</p>
+            <button class="next-btn" onclick="nextScreen(6)">Final Message →</button>
+        </div>
+    </section>
+
+    <!-- Screen 6: Love Letter -->
+    <section class="screen letter-screen" id="screen6">
+        <div class="letter-content">
+            <div class="letter">
+                <h2>Dear Jaleen,</h2>
+                <p>Aaj tumhara din hai.... socha ese hi tell krdu , ki how special you are to meee.</p>
+                <p>3 saal pehle ek random group mein mili thi tum... aur ab dekho, tum meri poori duniya ban gayi ho....fr</p>
+                <p>Distance hai, religion alag hai, par pyaar? Woh toh sirf badhta ja raha hai har din.(exponential wala graph plot kr lena) </p>
+                <p>Tum sirf meri girlfriend nahi ho... tum mera ghar ho, meri safe space ho, meri wajah ho khush rehne ki.</p>
+                <p>Happy Birthday Bebigal! 🎂</p>
+                <p>Yeh saal tumhara sabse khoobsurat saal ho... aur main hamesha tumhare saath rahu, and I hope agle saal sath me celebrate kru.</p>
+                <p class="signature">Forever Yours,<br><span class="name-sign">Krishna ❤️</span></p>
+            </div>
+            <button class="next-btn" onclick="nextScreen(7)">🎉 Final Surprise 🎉</button>
+        </div>
+    </section>
+
+    <!-- Screen 7: Final Wish -->
+    <section class="screen final-screen" id="screen7">
+        <div class="final-content">
+            <div class="big-wish">
+                <h1>Happy Birthday</h1>
+                <h2>Zareen ❤️</h2>
+                <p class="year-text">Welcome to your new year of life! 🎉</p>
+                <div class="hearts-animation">
+                    <span>💕</span><span>💖</span><span>💕</span><span>💖</span><span>💕</span>
+                </div>
+                <p class="love-message">I Love You, Jaleen! 💋😋</p>
+                <p class="small-note">Ab jaldi se ily bolo muze ! </p>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
